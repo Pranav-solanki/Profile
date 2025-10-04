@@ -1,4 +1,4 @@
-.container{
+.container {
     display: flex;
     /* border: 2px solid black; */
     align-items: center;
@@ -8,34 +8,39 @@
     position: sticky;
     top: 0;
     padding: 10px;
-    
+    z-index: 10;
 }
-.right-side{
+
+.right-side {
     display: flex;
     /* border: 2px solid purple; */
     justify-content: space-evenly;
     width: 50%;
 }
-.logo{
+
+.logo {
     width: 50%;
     position: relative;
     left: 50px;
 }
-ul{
+
+ul {
     display: flex;
     /* border: 2px solid red; */
     gap: 30px;
 }
-li{
+
+li {
     list-style: none;
     cursor: pointer;
 }
-.mode{
+
+.mode {
     right: 0;
     cursor: pointer;
 }
-a{
-    text-decoration: none;
-    
-}
 
+a {
+    text-decoration: none;
+
+}
