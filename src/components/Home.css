@@ -2,7 +2,7 @@
     /* width: 95vw; */
     height: 100vh;
     margin-top: 5px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     animation: appear linear;
     animation-timeline: view();

@@ -1,0 +1,65 @@
+#Contact {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+    font-size: xx-large;
+    width: 100vw;
+    height: auto;
+    padding: 60px 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+/* Title */
+.contact-title {
+    font-size: 2.2rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.contact-text {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 30px;
+}
+
+/* Links container */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Link buttons */
+.contact-links a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #9b5de5, #f15bb5);
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.contact-links a:hover {
+    background: linear-gradient(90deg, #f15bb5, #9b5de5);
+}
+
+/* 🌙 Dark mode overrides */
+.dark-mode .contact-title,
+.dark-mode .contact-text {
+    color: white;
+}

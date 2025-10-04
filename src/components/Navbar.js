@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <>
       <div className="container">
-        <div className="logo">I am logo</div>
+        <div className="logo"></div>
         <div className="right-side">
           <div className="headings">
             <nav>

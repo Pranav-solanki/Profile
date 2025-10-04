@@ -10,7 +10,7 @@ import "./components/Body.css";
 
 function App() {
   useEffect(() => {
-    document.body.classList.add("light-mode");
+    document.body.classList.add("dark-mode");
   }, []);
 
   return (

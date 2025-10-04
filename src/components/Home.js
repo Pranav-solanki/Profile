@@ -1,5 +1,5 @@
 import "./Home.css";
-import myself from "../assets/images/image1.jpg";
+import myself from "../assets/images/image2.jpg";
 export default function Home() {
   return (
     <div id="Home">
@@ -11,8 +11,8 @@ export default function Home() {
             name is <span className="name1">Pranav.</span>
           </div>
           <p className="line3">
-            i'm a visual designer from surat Currenty working with <span className="name2">@ideo</span> as a UI
-            consultant
+            i'm a visual designer from surat Currenty working with{" "}
+            <span className="name2">@ideo</span> as a UI consultant
           </p>
         </div>
       </div>
