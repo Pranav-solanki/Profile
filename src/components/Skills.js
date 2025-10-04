@@ -1,10 +1,29 @@
 import React from "react";
-import { FaHtml5, FaCss3Alt, FaReact, FaPython } from "react-icons/fa";
-import "./Skills.module.css";
-export default function Home() {
+import "./Skills.css";
+
+export default function Skills() {
+  const skillList = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Git & GitHub",
+    "Tailwind",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+  ];
+
   return (
-    <>
-    
-    </>
+    <div id="Skills">
+      <h2 className="skills-title">My Skills</h2>
+      <div className="skills-grid">
+        {skillList.map((skill, index) => (
+          <div className="skill-card" key={index}>
+            {skill}
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }

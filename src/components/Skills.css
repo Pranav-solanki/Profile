@@ -1,0 +1,83 @@
+/* Section wrapper */
+#Skills {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    width: 100vw;
+    height: auto;
+}
+
+/* Reusing your keyframe */
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+/* Title styling */
+.skills-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: black;
+    position: relative;
+}
+
+.skills-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #9b5de5, #f15bb5);
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+/* Skills grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Each skill card */
+.skill-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 600;
+    color: black;
+    transition: transform 0.3s ease, background 0.3s ease;
+
+}
+
+
+.skill-card:hover {
+    transform: scale(1.05);
+    background-color: rgba(123, 97, 255, 0.2);
+    cursor: default;
+}
+
+/* 🌙 Dark mode overrides */
+.dark-mode #Skills .skills-title {
+    color: white;
+}
+
+.dark-mode .skill-card {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
