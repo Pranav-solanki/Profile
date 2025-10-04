@@ -1,109 +1,116 @@
 /* Scroll-based animation stays */
 #About {
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0;
-  font-size: xx-large;
-  width: 100vw;
-  height: auto;
-  padding: 60px 30px;
-  box-sizing: border-box;
-  border: 2px solid red;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+    font-size: xx-large;
+    width: 100vw;
+    height: auto;
+    padding: 60px 30px;
+    box-sizing: border-box;
+    border: 2px solid red;
 }
 
 /* Your existing animation */
 @keyframes appear {
-  from {
-    opacity: 0;
-    scale: 0.5;
-  }
-  to {
-    opacity: 1;
-    scale: 1;
-  }
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
 }
 
 /* Content wrapper */
 .center {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  font-size: 1rem;
-  font-family: "Roboto", sans-serif;
-  color: black; /* Default (light mode) */
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    color: black;
+    /* Default (light mode) */
 }
 
 /* Sections enter with fade-in effect */
 .part {
-  margin-bottom: 40px;
-  animation: fadeInText 1s ease-out both;
-  opacity: 0;
+    margin-bottom: 40px;
+    animation: fadeInText 1s ease-out both;
+    opacity: 0;
 }
 
 .part:nth-child(1) {
-  animation-delay: 0.2s;
+    animation-delay: 0.2s;
 }
+
 .part:nth-child(2) {
-  animation-delay: 0.4s;
+    animation-delay: 0.4s;
 }
+
 .part:nth-child(3) {
-  animation-delay: 0.6s;
+    animation-delay: 0.6s;
 }
 
 @keyframes fadeInText {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Section title styling */
 .section-title {
-  font-size: 2.2rem;
-  color: black; /* default */
-  position: relative;
-  display: inline-block;
-  margin-bottom: 20px;
+    font-size: 2.2rem;
+    color: black;
+    /* default */
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 .section-title::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 60%;
-  height: 3px;
-  background: linear-gradient(90deg, #9b5de5, #f15bb5);
-  border-radius: 2px;
-  animation: underlineGrow 1s ease-out forwards;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 60%;
+    height: 3px;
+    background: linear-gradient(90deg, #9b5de5, #f15bb5);
+    border-radius: 2px;
+    animation: underlineGrow 1s ease-out forwards;
 }
 
 @keyframes underlineGrow {
-  from {
-    width: 0;
-  }
-  to {
-    width: 60%;
-  }
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 60%;
+    }
 }
 
 /* Gradient text highlights */
 .highlight {
-  background: linear-gradient(90deg, #ff6ec4, #7873f5);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 600;
+    background: linear-gradient(90deg, #ff6ec4, #7873f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
 }
 
 /* 🌙 Dark mode overrides */
 .dark-mode #About .center {
-  color: white;
+    color: white;
 }
 
 .dark-mode #About .section-title {
-  color: white;
+    color: white;
 }
