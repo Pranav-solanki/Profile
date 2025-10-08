@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <>
       <div className="container">
-        <div className="logo"></div>
+        <div className="logo"> <img src={require("../assets/images/logo1.png")} alt="Logo" /></div>
         <div className="right-side">
           <div className="headings">
             <nav>
